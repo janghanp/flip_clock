@@ -1,0 +1,111 @@
+body {
+  margin: 0px;
+  background-color: black;
+  font-family: "Anton", sans-serif;
+}
+
+.title {
+  color: white;
+  font-size: 5rem;
+  letter-spacing: 0.2rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.clock {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 5rem;
+  padding: 20px;
+}
+
+.hour,
+.min,
+.second {
+  display: flex;
+  gap: 10px;
+}
+
+.number_wrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(248, 236, 236, 0.2), 0 6px 20px 0 rgba(249, 242, 242, 0.19);
+  border-radius: 20px;
+}
+
+.next {
+  text-align: center;
+  width: 40px;
+  position: absolute;
+  z-index: 20;
+  background: black;
+  overflow: hidden;
+  border: 1px solid white;
+  padding: 0px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 60px;
+  border-bottom: none;
+}
+
+.flip {
+  transform: rotateX(-90deg);
+  transition: all 300ms;
+}
+
+.up {
+  text-align: center;
+  z-index: 30;
+  width: 40px;
+  overflow: hidden;
+  border: 1px solid white;
+  padding: 0px 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 60px;
+  background: black;
+  -webkit-transform-origin: 100% 106.5%;
+  border-bottom: none;
+}
+
+.down {
+  margin-top: 8px;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid white;
+  padding: 0px 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 50;
+  background: black;
+  display: flex;
+  justify-content: center;
+  border-top: none;
+}
+
+.number2 {
+  position: relative;
+  margin-top: -65px;
+  width: min-content;
+  text-align: center;
+  align-items: center;
+}
+
+.number1 {
+  text-align: center;
+}
